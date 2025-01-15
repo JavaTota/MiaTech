@@ -8,11 +8,21 @@
 </head>
 <body>
     
-    <div class="image-container">
+    <figure>
          <img src="./images/airplane.jpeg" alt="img" width="auto" height="300" >
         <img src="./images/car.jpeg" alt="img" width="auto" height="300">
         <img src="./images/gate.jpeg" alt="img" width="400" height="auto">
-    </div>
+        <!-- responsive images -->
+
+        <img alt="img" srcset="./images/airplane.jpeg 20000w" sizes="70wmin">   <img alt="img" srcset="./images/gate.jpeg 10000w" sizes="30wmin">
+        
+        <img src="./images/car.jpeg" alt="img" srcset="./images/car.jpeg 4x"
+        width="300px">
+    </figure>
+    <!-- <picture>
+        <source media="(min-width: 650px)" srcset="./images/car.jpeg">
+        <source media="(min-width: 465px)" srcset="./images/airplane.jpeg">
+    </picture> -->
    
 </body>
 </html>
